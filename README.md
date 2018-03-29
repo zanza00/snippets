@@ -31,6 +31,14 @@ Example output
      520 total
 ```
 
+#### Create `.nvmrc`
+
+To set a specific version using the node version currently in use
+
+```bash
+node -v > .nvmrc
+```
+
 ### Javascript
 
 #### Extract/remove values
