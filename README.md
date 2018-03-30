@@ -31,6 +31,14 @@ Example output
      520 total
 ```
 
+### Remove duplicate lines
+
+To remove duplicate lines creating a new file, replace `<input_filename>` and `<output_filename>` accordingly
+
+```bash
+awk '!seen[$0]++' "<input_filename>" > "<output_filename>"
+```
+
 #### Create `.nvmrc`
 
 To set a specific version using the node version currently in use
