@@ -39,6 +39,14 @@ To remove duplicate lines creating a new file, replace `<input_filename>` and `<
 awk '!seen[$0]++' "<input_filename>" > "<output_filename>"
 ```
 
+### Replace strimng in text file
+
+using sed is possible to do simple sostitutions in the file
+
+```bash
+sed -i -e 's/searc/replace/g' <target file>
+```
+
 #### Create `.nvmrc`
 
 To set a specific version using the node version currently in use
